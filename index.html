@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blikající Pozadí</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      background-image: url('https://www.gmvv.cz/informace/nasi-lide/pedagogicky-sbor/item/3161-mgr-antonin-kadlec');
+      background-size: cover;
+      background-position: center;
+      animation: blinkBackground 2s infinite alternate;
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+
+    /* Blikání pozadí s obrázkem */
+    @keyframes blinkBackground {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.3; /* Snížení průhlednosti obrázku */
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Blikající Pozadí s Obrázkem</h1>
+  <p>Pozadí stránky bliká obrázkem.</p>
+</body>
+</html>
